@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babayogenk</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="welcome-section" id="welcome-section">
+        <img src="{{ url_for('static', filename='img/baba.gif') }}" alt="Logo GIF" class="logo">
+        <p>scroll down or click the arrow button</p>
+        <div class="scroll-down" onclick="scrollDown()" >
+        </div>
+    </section>
+
+    <section class="content-section" id="content-section">
+        <section class="team-section">
+            <h1>The Babayogenk</h1>
+            <p>we'll start the conversation with "Itulah My"</p> 
+            <div class="team-container">
+                <div class="team-member">
+                    <a href="{{ url_for('rian') }}" target="_blank">
+                        <img src="{{ url_for('static', filename='img/rian.jpg') }}" alt="Team Member 1">
+                    </a>
+                    <h3>Raihan</h3>
+                    <p>22.83.0797</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/rian.rizqy.7" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/rianrizqy123" target="_blank "><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/rianrizqy123" target="_blank" ><i class="fab fa-instagram"></i></a> 
+                    </div>
+                </div>
+                <div class="team-member">
+                    <a href="{{ url_for('bintang') }}" target="_blank">
+                        <img src="{{ url_for('static', filename='img/bintang.jpg') }}" alt="Team Member 2">
+                    </a>
+                    <h3>Bintang</h3>
+                    <p>22.83.0796</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/100011514820910" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/B24tgg" target="_blank "><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/bntgg24" target="_blank" ><i class="fab fa-instagram"></i></a> 
+                    </div>
+                </div>
+                <div class="team-member">
+                    <a href="{{ url_for('fayi') }}" target="_blank">
+                        <img src="{{ url_for('static', filename='img/fayi.jpg') }}" alt="Team Member 3">
+                    </a>
+                    <h3>Fayi</h3>
+                    <p>22.83.0808</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/fayi.s.t.71" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/faysbhii" target="_blank "><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/faysbhii" target="_blank" ><i class="fab fa-instagram"></i></a> 
+                    </div>
+                </div>
+                <div class="team-member">
+                    <a href="{{ url_for('iqbal') }}" target="_blank">
+                        <img src="{{ url_for('static', filename='img/iqbal.jpg') }}" alt="Team Member 4">
+                    </a>
+                    <h3>Iqbal</h3>
+                    <p>22.83.0818</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/100009805628208" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/kingashari06" target="_blank "><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/kingashari" target="_blank" ><i class="fab fa-instagram"></i></a> 
+                    </div>
+                </div>
+                <p><i>klik foto untuk melihat selengkapnya*</i></p>
+            </div>
+        </section>
+    </section>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
